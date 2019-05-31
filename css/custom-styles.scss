@@ -1,0 +1,191 @@
+body {
+    font-family: open_sansregular, Arial, Helvetica, Sans-serif;
+    color: #252525;
+}
+
+// Page container
+#home-page-hero-az .container {
+    max-width: 1600px;
+    max-height: 627px;
+
+    .hero-container {
+        background-color: #ffffff;
+        padding: 8px;
+        margin: auto;
+    }
+
+    // Left side
+    .img-and-copy-container {
+        flex: 3;
+        background: url('https://webcdn3.cox.com/content/dam/cox/residential/flex/images/backgrounds/man-and-woman-sitting-on-couch-in-living-room-watching-tv.png/_jcr_content/renditions/man-and-woman-sitting-on-couch-in-living-room-watching-tv.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+        padding: 0;
+        min-height: 1px;
+        max-width: 1144px;
+        height: 552px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+
+        .lower-third-content-container {
+            background-color: rgba(235, 239, 240, 1);
+            padding: 30px 20px 20px 20px;
+            border-radius: 0 0 6px 6px;
+
+            p.heading {
+                font-family: GothamRounded;
+                font-size: 45px;
+                line-height: 1.1;
+            }
+
+            a button.cta {
+                border-radius: 26px;
+                font-size: 12px;
+                font-weight: 700;
+                width: 225px;
+                padding: 12px 40px;
+                background: rgba(255, 255, 255, .65);
+                border: 2px solid #1e90ff;
+                color: #1e90ff;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                min-width: 225px;
+                text-decoration: none;
+                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+                &:hover {
+                    background: rgba(255, 255, 255, .65) !important;
+                    border: 2px solid #0a76db !important;
+                    color: #0a76db !important;
+                    font-size: 1.0 !important;
+                    min-width: 225px !important;
+                    -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3) !important;
+                    -moz-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3) !important;
+                    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3) !important;
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+
+    // Right side nav pod
+    #hero-template-home-page-nav-pod {
+        flex: 1;
+        margin-left: 0.8rem;
+        max-width: 407px;
+        max-height: 555px;
+        border: 1px solid #D1DBE0;
+    }
+
+    #retargetingContent {
+        height: 256px;
+        padding-top: 9px
+    }
+
+    .flextext p:nth-last-of-type(2) {
+        line-height: 1.5;
+    }
+
+    .right-side-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+#home-page-hero-az #retargetingContent>div {
+    max-height: 256px;
+}
+
+// Media Queries
+@media(max-width: 1590px) {
+    #home-page-hero-az .container .img-and-copy-container {
+        background-size: contain;
+    }
+}
+
+@media(max-width: 1300px) {
+    #home-page-hero-az .container .img-and-copy-container {
+        background-size: auto;
+    }
+
+    #home-page-hero-az .lower-third-content-container {
+        min-height: 205px;
+    }
+}
+
+@media(max-width: 1212px) {
+    #home-page-hero-az p.heading {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 1140px) {
+    #home-page-hero-az p.heading {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media(min-width: 990px) {
+
+    #home-page-hero-az #retargetingContent,
+    #retargetingContent>div {
+        height: 342px;
+        line-height: 1;
+    }
+}
+
+@media(max-width: 990px) {
+    #home-page-hero-az .img-and-copy-container {
+        background: none;
+    }
+
+    #home-page-hero-az .hero-template-home-page-nav-text-section {
+        align-items: center;
+    }
+
+    #home-page-hero-az .hero-container {
+        flex-direction: column;
+    }
+
+    #home-page-hero-az .container #hero-template-home-page-nav-pod {
+        flex: 1;
+        max-width: 100%;
+        border: none;
+        margin-left: 0;
+    }
+
+    #home-page-hero-az .container #retargetingContent {
+        height: 177px;
+        line-height: 1;
+    }
+
+    #home-page-hero-az .container .right-side-container {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 545px) {
+    #home-page-hero-az .hero-template-home-page-nav-button-section {
+        margin-top: 61px;
+    }
+
+    #home-page-hero-az .lower-third-content-container p.heading {
+        font-size: 27px !important;
+    }
+}
+
+@media (max-width: 335px) {
+    #home-page-hero-az #retargetingContent {
+        margin-top: 30px;
+    }
+
+    #home-page-hero-az .hero-template-home-page-nav-button-section {
+        margin-top: 98px;
+    }
+}
